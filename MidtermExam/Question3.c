@@ -8,12 +8,10 @@ int main()
   //printf("    $$\n");
   //printf("    $$\n");
   //return 0;
-  char array1[1]= {'3','5'};
+  char array1[1]= {'$'};
   char array2[1]= {" "};
   int z= 0;
 
-  while(z<=2)
-  {
   for (int i=0;i<=9;i++)
   {
     printf("%c", array1[0]);
@@ -33,7 +31,6 @@ int main()
     }
     printf("\n");
   }
-  z++;
-  }
+
   return 0;
 }
