@@ -1,6 +1,8 @@
 INDEX OF PROMPTS
 - Problem prompt: Write a program to find the average of three numbers.
-- Answer File: Quiz1.c
+- Answer File: Quiz1.c   
+
+
 - Problem prompt: Using “For” loop write a program to calculate the Sum of even numbers from 1 to user input number.
 - Answer File: Quiz2.c
 - Problem prompt: Using “For” loop to write a program to calculate all factors of any input number.
