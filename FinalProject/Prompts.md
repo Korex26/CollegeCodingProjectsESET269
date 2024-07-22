@@ -1,21 +1,5 @@
-Final project for ESET 269 at Texas A&M University, Fall 2019
+INDEX OF PROMPTS
+- Problem prompt: The project is to create a program that allows a user to interface to the MSP432 via the console window. The user will be able to control digital output, read digital input, and read the temperature of the MSP432. When the program starts, it displays a menu to the user as shown below. A user selects an option to interact with the Launchpad. If option 1 is selected, the user is prompted for the following: What combination of RBG LED to light up as a number, Amount of time to toggle blinking of the LED in seconds. How many seconds the LED is ON and how many seconds the LED is OFF, How many times to blink the LED. Once the Led has finished blinking, the menu is displayed again. If option 2 is selected, the status of the Launchpad buttons are displayed. The option will state which of the buttons are pressed. It is not required to dynamically update which buttons are pressed. The only time the reading of the input is updated is when option 2 is initially selected. The menu is redisplayed after the button status is shown. If option 3 is selected, the user will be prompted for the following: Number of temperature readings to display (between 1 to 5). Once a user selects the number of readings, a temperature sensor value is displayed to the console window once every second in both Celsius and Fahrenheit. After the number of readings are shown, the main menu is displayed. Any invalid menu option will display an error message and redisplay the menu. An invalid RGB LED combination, not a number between 1 to 7, will default to 7. An invalid number of temperature readings, not a number between 1 to 5, will default to 5. RGB combination is a number between 1 to 7 which turns on the red, green, and blue LED. For example, 5 in binary is 101, this means that the red and blue LED will be on. 7 will turn on all the LEDs. Toggle time is how many seconds to turn the LED on and off. A toggle time of 1 second means the LED is on 1 second and off 1 second. The toggling of the LED must be implemented with Timer32. The number of blinks is how many on/off cycles to do. For example, a number of blinks of 2 will turn the led on and off twice. You only need to display what button, or buttons, are held when option 2 is selected. It does not need to dynamically update which button is pressed. The ADC and UART function definitions will be provided to you. You are responsible for integrating them into your code. Temperature readings are displayed every second. The second delay must be implemented with SysTick Timer. Scanf and printf cannot be used on the code turned in.
+- Answer File: Quiz1.c
 
-Contributors:
-- Kristopher Elers
-- Alex Liu
-- Maksym Sury
 
-This project was created in Keil and requires Teraterm (Baud Rate: 115200) and a MSP432P401R.  Menu option 3 will also require a temperature sensor on a breadboard with jumper wires to be hooked up to P5.4 with power running to 3.3V connector and grounded at the ground connector underneath the 5V pin on the MSP432 Launchpad.  Please check that your circuit is correct before connecting the power.  The temperature sensor will get very hot if it's incorrect and could potentionally destroy the MSP432.
-
-The program will display:
-  
-  MSP432 Menu
-1. RGB Control
-2. Digital Input
-3. Temperature Reading
-4. Quit
-
-- Selecting option 1 will prompt the user for a RGB value (1-7), a toggle time, and a number of blinks. It will then blink the LED the desired color, with the desired delay, the desired amount of times.
-- Selecting option 2 will print the current button(s) that are held down. Please hold the button(s) down **BEFORE** pressing enter.
-- Selecting option 3 will ask the user for a number of temperature readings (1-5) to perform and will print the temperature that the temperature sensor is reading in both Celsius and Fahrenheit.
-- Selecting option 4 will stop the program.
