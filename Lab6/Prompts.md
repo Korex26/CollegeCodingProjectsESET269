@@ -1,7 +1,4 @@
 INDEX OF PROMPTS
-- Problem prompt:
-- Answer File:
-<br/><br/>
-- Problem prompt:
-- Answer File:
+- Problem prompt: The following table contains information to determine if a drug is to be rejected or accepted. If a drug is greater than 30 on dose and produces a reaction, it should be rejected. If any drug produces a reaction and needs a booster, it should be rejected. All other conditions, the drug is accepted. Write a program to determine what drugs should be accepted or rejected, and display to the console window. Drug Dose Reaction Booster. UN001 30 Yes No. UN2134 25 Yes Yes. UN009 30 No No. UN3453 35 Yes Yes. Example console window output is given below. The following are also required: A function must be used to populate a struct array with the above table values. (Do not use scanf asking a user to enter values) The function can be implemented as either pass by value or pass by reference. A function must be used to determine if a drug is to be rejected or accepted. Function can be implemented as either pass by value or pass by reference. Organize the code into multiple C files which include the following: Main C file – contains the Main function. Header file – Contains function declarations, struct definition, etc. Additional C file – Contains function definitions.
+- Answer Files: Lab6Code1Definitions.c Lab6Code1Header.c Lab6Code1Main.c
 <br/><br/>
